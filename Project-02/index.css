@@ -26,3 +26,42 @@ button {
   letter-spacing: 2px;
   cursor: pointer;
 }
+
+.submitBtn {
+  width: 180px;
+  height: 50px;
+}
+
+.submitBtn:active {
+  transform: scale(0.95);
+}
+
+.pop-up {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.01);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.pop-up-open {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-up img {
+  width: 100px;
+  position: absolute;
+  top: -27%;
+  left: 38%;
+}
