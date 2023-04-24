@@ -65,3 +65,18 @@ button {
   top: -27%;
   left: 38%;
 }
+.pop-up h2 {
+  margin-top: 30px;
+  color: #ff0000;
+}
+
+.pop-up p {
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.pop-up .okBtn {
+  width: 80px;
+  height: 40px;
+}
