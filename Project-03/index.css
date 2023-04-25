@@ -41,3 +41,36 @@ input {
   font-size: 18px;
   margin-bottom: 10px;
 }
+
+.btn {
+  background-color: rgb(219, 51, 253);
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: 500;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  /* display: inline-block; */
+}
+
+.error {
+  background-color: rgb(255, 139, 139);
+  padding: 5px 0;
+  width: 70%;
+  text-align: center;
+  display: none;
+}
+
+h3 {
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.message {
+  font-size: 18px;
+  color: rgb(44, 29, 255);
+  font-weight: bold;
+  margin-top: -5px;
+}
