@@ -20,3 +20,18 @@ function increase(){
         countEl.style.color = "black";
     }
 }
+function decrease(){
+    counts--;
+    countEl.innerHTML = counts;
+    if(counts<0){
+        countEl.style.color = "red";
+    }
+    if(counts==0){
+        countEl.style.color = "black";
+    }
+}
+function reset(){
+    counts=0;
+    countEl.innerHTML = counts;
+    countEl.style.color = "black";
+}
