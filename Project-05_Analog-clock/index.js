@@ -63,3 +63,34 @@ function getTimeForDigital() {
     ampmEl.innerHTML = AmPm;
 
 }
+
+setInterval(getTimeForDigital, 1000);
+getTimeForDigital();
+
+// Colors 
+const colorEl = document.querySelectorAll(".color");
+const rootEl = document.querySelector(":root");
+
+colorEl[0].addEventListener("click",()=>{
+    rootEl.style = "--color : red" 
+})
+
+colorEl[1].addEventListener("click",()=>{
+    rootEl.style = "--color : gray" 
+})
+
+colorEl[2].addEventListener("click",()=>{
+    rootEl.style = "--color : slateblue" 
+})
+
+colorEl[3].addEventListener("click",()=>{
+    rootEl.style = "--color : green" 
+})
+
+colorEl[4].addEventListener("click",()=>{
+    rootEl.style = "--color : black" 
+})
+
+colorEl[5].addEventListener("click",()=>{
+    rootEl.style = "--color : blue" 
+})
