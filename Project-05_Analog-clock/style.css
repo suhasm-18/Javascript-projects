@@ -158,3 +158,26 @@ body {
   border: 2px solid white;
   cursor: pointer;
 }
+.redC {
+  background-color: red;
+}
+
+.grayC {
+  background-color: gray;
+}
+
+.slateblueC {
+  background-color: slateblue;
+}
+
+.greenC {
+  background-color: green;
+}
+
+.blueC {
+  background-color: blue;
+}
+
+.blackC {
+  background-color: black;
+}
