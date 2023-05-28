@@ -111,3 +111,28 @@
   100% {
     transform: rotate(-30deg) translateX(13.5px) translateY(8px);
   }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Roboto", Arial;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #262433;
+}
+body .heart-switch {
+  margin: 12px 0;
+}
