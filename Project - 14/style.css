@@ -36,6 +36,177 @@ body {
   height: 1%;
   border-radius: 500px;
 }
+.app {
+  position: relative;
+  background: #fff;
+  flex: 0 0 auto;
+  width: 200px;
+  height: 355.871886121px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.nav .nav-bar {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  z-index: 3;
+}
+.nav .logo {
+  flex: 1 1 100%;
+}
+.nav .nav-btn {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  flex: 0;
+  padding: 5px;
+}
+.nav .nav-btn .btn-bar {
+  position: relative;
+  width: 1.34em;
+  height: 3px;
+  border-radius: 5px;
+  background: #444;
+}
+.nav .nav-btn .btn-bar.menu:not(:first-child) {
+  margin-top: 3px;
+}
+.nav .nav-btn .btn-bar.close {
+  transform-origin: center center;
+  position: absolute;
+  margin-top: -1.5px;
+  opacity: 0;
+  top: 50%;
+}
+.nav .nav-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.nav .nav-content .background {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+}
+.nav .nav-content .portion {
+  background: #c796ec;
+}
+.nav .nav-content .portion:not(:first-child) {
+  margin-top: -1px;
+}
+.nav.open .nav-bar .nav-btn .btn-bar.menu {
+  opacity: 0;
+}
+.nav.open .nav-bar .nav-btn .btn-bar.close {
+  opacity: 1;
+}
+
+.wrapper:nth-child(1) .app .nav {
+  /*///////////////////////////////////
+  // Region: Nav Animations 
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Initial (Closed) States 
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Expanded (Open) States 
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Transition -> Menu Opening   
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Transition -> Menu Closing   
+  ///////////////////////////////////*/
+}
+.wrapper:nth-child(1) .app .nav .btn-bar.menu:nth-child(even) {
+  width: 1.8em;
+}
+.wrapper:nth-child(1) .app .nav .btn-bar.close:not(:last-child) {
+  transform: rotate(45deg) translateX(-250%);
+}
+.wrapper:nth-child(1) .app .nav .btn-bar.close:last-child {
+  transform: rotate(-45deg) translateX(250%);
+}
+.wrapper:nth-child(1) .app .nav .nav-content .background .portion {
+  flex: 1 1 100%;
+}
+.wrapper:nth-child(1) .app .nav .nav-content .background .portion:nth-child(odd) {
+  transform: translateX(-100%);
+}
+.wrapper:nth-child(1) .app .nav .nav-content .background .portion:nth-child(even) {
+  transform: translateX(100%);
+}
+.wrapper:nth-child(1) .app .nav.open .nav-btn .btn-bar.menu:nth-child(odd) {
+  transform: translateX(-400%);
+}
+.wrapper:nth-child(1) .app .nav.open .nav-btn .btn-bar.menu:nth-child(even) {
+  transform: translateX(200%);
+}
+.wrapper:nth-child(1) .app .nav.open .nav-btn .btn-bar.close:not(:last-child) {
+  transform: rotate(45deg);
+}
+.wrapper:nth-child(1) .app .nav.open .nav-btn .btn-bar.close:last-child {
+  transform: rotate(-45deg);
+}
+.wrapper:nth-child(1) .app .nav.open .nav-content {
+  z-index: 1;
+}
+.wrapper:nth-child(1) .app .nav.open .nav-content .background .portion {
+  transform: translateX(0%);
+}
+.wrapper:nth-child(1) .app .nav.open .btn-bar.menu {
+  transition: transform 0.3s ease-in-out, opacity 0.15s ease-in-out 0.15s;
+}
+.wrapper:nth-child(1) .app .nav.open .btn-bar.close {
+  transition: transform 0.2s ease-in-out 0.3s, opacity 0.05s ease-in-out 0.3s;
+}
+.wrapper:nth-child(1) .app .nav.open .nav-content {
+  transition: z-index 0.01s ease-in-out 0.3s;
+}
+.wrapper:nth-child(1) .app .nav.open .nav-content .background .portion {
+  transition: transform 0.2s ease-in-out 0.3s;
+}
+.wrapper:nth-child(1) .app .nav .btn-bar.menu {
+  transition: transform 0.3s ease-in-out 0.2s, opacity 0.15s ease-in-out 0.2s;
+}
+.wrapper:nth-child(1) .app .nav .btn-bar.close {
+  transition: transform 0.2s ease-in-out, opacity 0.05s ease-in-out 0.2s;
+}
+.wrapper:nth-child(1) .app .nav .nav-content {
+  transition: z-index 0.01s ease-in-out 0.2s;
+}
+.wrapper:nth-child(1) .app .nav .nav-content .background .portion {
+  transition: transform 0.2s ease-in-out;
+}
+
+.wrapper:nth-child(2) .app .nav {
+  /*///////////////////////////////////
+  // Region: Nav Animations 
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Initial (Closed) States 
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Expanded (Open) States 
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Transition -> Menu Opening   
+  ///////////////////////////////////*/
+  /*///////////////////////////////////
+  // Region: Transition -> Menu Closing   
+  ///////////////////////////////////*/
+}
 .wrapper:after {
   content: "";
   position: absolute;
