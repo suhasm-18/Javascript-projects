@@ -207,6 +207,86 @@ body {
   // Region: Transition -> Menu Closing   
   ///////////////////////////////////*/
 }
+
+.wrapper:nth-child(2) .app .nav .nav-btn {
+  align-items: flex-end;
+}
+.wrapper:nth-child(2) .app .nav .btn-bar.menu:nth-child(1) {
+  transform-origin: top right;
+  transform: rotate(-45deg);
+  width: 1.8em;
+}
+.wrapper:nth-child(2) .app .nav .btn-bar.menu:nth-child(2) {
+  transform: rotate(-45deg) translate(0, -4px);
+}
+.wrapper:nth-child(2) .app .nav .btn-bar.menu:nth-child(3) {
+  transform: rotate(-45deg) translate(0, 1px);
+  width: 0.8em;
+}
+.wrapper:nth-child(2) .app .nav .btn-bar.close:not(:last-child) {
+  transform: rotate(45deg) translateX(-250%);
+}
+.wrapper:nth-child(2) .app .nav .btn-bar.close:last-child {
+  transform: rotate(-45deg) translateX(250%);
+}
+.wrapper:nth-child(2) .app .nav .nav-content .background {
+  transform-origin: center;
+  transform: rotate(-45deg) scale(2, 1.2);
+}
+.wrapper:nth-child(2) .app .nav .nav-content .background .portion {
+  flex: 1 1 100%;
+}
+.wrapper:nth-child(2) .app .nav .nav-content .background .portion:nth-child(odd) {
+  transform: translateX(-100%);
+}
+.wrapper:nth-child(2) .app .nav .nav-content .background .portion:nth-child(even) {
+  transform: translateX(100%);
+}
+.wrapper:nth-child(2) .app .nav.open .nav-btn .btn-bar:nth-child(1) {
+  transform: rotate(-45deg) translateX(-400%);
+}
+.wrapper:nth-child(2) .app .nav.open .nav-btn .btn-bar:nth-child(2) {
+  transform: rotate(-45deg) translate(0, -4px) translateX(200%);
+}
+.wrapper:nth-child(2) .app .nav.open .nav-btn .btn-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(0, 1px) translateX(200%);
+}
+.wrapper:nth-child(2) .app .nav.open .nav-btn .btn-bar.close:not(:last-child) {
+  transform: rotate(45deg);
+}
+.wrapper:nth-child(2) .app .nav.open .nav-btn .btn-bar.close:last-child {
+  transform: rotate(-45deg);
+}
+.wrapper:nth-child(2) .app .nav.open .nav-content {
+  z-index: 1;
+}
+.wrapper:nth-child(2) .app .nav.open .nav-content .background .portion {
+  transform: translateX(0%);
+}
+.wrapper:nth-child(2) .app .nav.open .btn-bar.menu {
+  transition: transform 0.3s ease-in-out, opacity 0.15s ease-in-out 0.15s;
+}
+.wrapper:nth-child(2) .app .nav.open .btn-bar.close {
+  transition: transform 0.5s ease-in-out 0.3s, opacity 0.125s ease-in-out 0.3s;
+}
+.wrapper:nth-child(2) .app .nav.open .nav-content {
+  transition: z-index 0.01s ease-in-out 0.3s;
+}
+.wrapper:nth-child(2) .app .nav.open .nav-content .background .portion {
+  transition: transform 0.5s ease-in-out 0.3s;
+}
+.wrapper:nth-child(2) .app .nav .btn-bar.menu {
+  transition: transform 0.3s ease-in-out 0.5s, opacity 0.15s ease-in-out 0.5s;
+}
+.wrapper:nth-child(2) .app .nav .btn-bar.close {
+  transition: transform 0.5s ease-in-out, opacity 0.125s ease-in-out 0.5s;
+}
+.wrapper:nth-child(2) .app .nav .nav-content {
+  transition: z-index 0.01s ease-in-out 0.5s;
+}
+.wrapper:nth-child(2) .app .nav .nav-content .background .portion {
+  transition: transform 0.5s ease-in-out;
+}
 .wrapper:after {
   content: "";
   position: absolute;
