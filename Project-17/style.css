@@ -254,3 +254,57 @@ body .container .button {
   }
 }
 
+@-webkit-keyframes background {
+  10% {
+    transform: scaleY(0);
+  }
+  40% {
+    transform: scaleY(0.15);
+  }
+  65% {
+    transform: scaleY(0.5);
+    border-radius: 0 0 50% 50%;
+  }
+  75% {
+    border-radius: 0 0 50% 50%;
+  }
+  90%, 100% {
+    border-radius: 0;
+  }
+  75%, 100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes background {
+  10% {
+    transform: scaleY(0);
+  }
+  40% {
+    transform: scaleY(0.15);
+  }
+  65% {
+    transform: scaleY(0.5);
+    border-radius: 0 0 50% 50%;
+  }
+  75% {
+    border-radius: 0 0 50% 50%;
+  }
+  90%, 100% {
+    border-radius: 0;
+  }
+  75%, 100% {
+    transform: scaleY(1);
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
