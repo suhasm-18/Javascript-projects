@@ -31,3 +31,15 @@ document.querySelectorAll('.button').forEach(button => {
     button.addEventListener('click', e => {
 
             setTimeout(() => {
+  svg.innerHTML = getPath(0, 0, [
+                    [3, 14],
+                    [8, 19],
+                    [21, 6]
+                ]);
+            }, duration / 2);
+
+        }
+
+    });
+
+});
