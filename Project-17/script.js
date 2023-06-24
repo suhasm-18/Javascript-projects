@@ -23,3 +23,11 @@ document.querySelectorAll('.button').forEach(button => {
     svgPath.smoothing = 0;
 
     button.addEventListener('click', e => {
+ button.style.setProperty('--duration', duration);
+
+    svgPath.y = 20;
+    svgPath.smoothing = 0;
+
+    button.addEventListener('click', e => {
+
+            setTimeout(() => {
